@@ -4,10 +4,10 @@ export default function Footer() {
 
     return(
         <div id="Footer">
-            <p>Email: email@gmail.com</p>
-            <p>Phone: ###-###-####</p>
-            <p>linkedIn link</p>
-            <p>Github link</p>
+            <p className="bottom" >Email: email@gmail.com</p>
+            <p className="bottom" >Phone: ###-###-####</p>
+            <p className="bottom" >linkedIn link</p>
+            <p className="bottom" >Github link</p>
         </div>
     )
 }

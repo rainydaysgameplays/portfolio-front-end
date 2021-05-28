@@ -7,9 +7,11 @@ export default function Homepage() {
 
 
     return (
-        <div>
+        <div className="All-content">
             <Header />
-            <p>Homepage</p>
+            <div className="Main-content">
+                <p>Homepage</p>
+            </div>
             <Footer />
         </div>
     );
