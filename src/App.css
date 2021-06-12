@@ -31,9 +31,42 @@
   min-height: 100%;
 }
 
+/* Links */
+.HeadingLinks:link, .HeadingLinks:visited, .HeadingLinks:hover{
+  text-decoration: none;
+}
+.HeadingLinks:link{
+  color: white;
+}
+.HeadingLinks:visited{
+  color: red;
+}
+.HeadingLinks:hover{
+  color: pink;
+}
+
+
 /* Main content */
-.Main-content{
+.Main-content, .Card-container{
   background-color: pink;
+  overflow: scroll;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Card-container{
+  border: black 2px solid;
+  flex-direction: row;
+  align-self: stretch;
+  justify-content: space-evenly;
+  overflow: visible;
+}
+
+.Project-cards{
+  border: solid 1px yellow;
+  
 }
 
 /*General */

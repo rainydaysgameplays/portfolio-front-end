@@ -1,18 +1,15 @@
 import React from 'react';
 
-
 //imports
 import Header from '../Header'
 import Footer from '../Footer'
 
-export default function Homepage() {
-
-
+export default function Contact(props) {
     return (
-        <div className="All-content">
+        <div  className="All-content">
             <Header />
             <div className="Main-content">
-                <p>Homepage</p>
+                <p>Conatact info</p>
             </div>
             <Footer />
         </div>

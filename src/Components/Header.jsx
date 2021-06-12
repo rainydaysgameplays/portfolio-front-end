@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export default function Header(props) {
     return (
@@ -6,15 +7,16 @@ export default function Header(props) {
             <div id="Profile-pic">
                 <p>profile pic</p>
                 <div>
-                    <p>Name</p>
+                    <p>Justin Shade</p>
                     <p>Fullstack engineer</p>
                 </div>
             </div>
             <div id="Heading-links">
-                <p>link to home</p>
-                <p>link to about</p>
-                <p>link to resume</p>
-                <p>link to contact</p>
+                <Link to={'/'} className="HeadingLinks" >Homepage</Link>
+                <Link to={'/about'} className="HeadingLinks" >About Me</Link>
+                <Link to={'/resume'} className="HeadingLinks" >Resume</Link>
+                <Link to={'/contact'} className="HeadingLinks" >Contact Info</Link>
+                <Link to={'/projects'} className="HeadingLinks" >Projects</Link>
             </div>
         </div>
     );
