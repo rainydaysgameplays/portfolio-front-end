@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+/* header */
+#Heading{
+  background-color: black;
+  color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Profile-pic{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: row;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+#Heading-links{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* Footer */
+#Footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.All-content{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  min-height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Links */
+.HeadingLinks:link, .HeadingLinks:visited, .HeadingLinks:hover{
+  text-decoration: none;
+}
+.HeadingLinks:link{
+  color: white;
+}
+.HeadingLinks:visited{
+  color: red;
+}
+.HeadingLinks:hover{
+  color: pink;
+}
+
+
+/* Main content */
+.Main-content, .Card-container{
+  background-color: pink;
+  overflow: scroll;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Card-container{
+  border: black 2px solid;
+  flex-direction: row;
+  align-self: stretch;
+  justify-content: space-evenly;
+  overflow: visible;
+}
+
+.Project-cards{
+  border: solid 1px yellow;
+  
+}
+
+/*General */
+p{
+  margin: 7px;
 }
