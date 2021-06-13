@@ -1,4 +1,12 @@
-/* headings */
+/* setting heading and footer boundries */
+.All-content{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  min-height: 100%;
+}
+
+/* Main heading */
 #Heading{
   background-color: black;
   color: white;
@@ -15,6 +23,16 @@
   justify-content: space-around;
 }
 
+.HeadingLinks:link, .HeadingLinks:visited, .HeadingLinks:hover{
+  text-decoration: none;
+  color: white;
+}
+.HeadingLinks:visited{
+  color: red;
+}
+.HeadingLinks:hover{
+  color: pink;
+}
 
 
 /* Footer */
@@ -26,29 +44,6 @@
   color: white;
 }
 
-/* setting heading and footer boundries */
-.All-content{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
-  min-height: 100%;
-}
-
-/* everything Links */
-.HeadingLinks:link, .HeadingLinks:visited, .HeadingLinks:hover{
-  text-decoration: none;
-}
-.HeadingLinks:link{
-  color: white;
-}
-.HeadingLinks:visited{
-  color: red;
-}
-.HeadingLinks:hover{
-  color: pink;
-}
-
-
 /* Main content of pages*/
 .Main-content, .Card-container, .Game-content{
   background-color: pink;
@@ -59,19 +54,34 @@
   align-items: center;
 }
 
+/* game page contents*/
 .Game-content{
-  background-color: powderblue;
+  background-color: rgb(0, 0, 0);
+  color: rgb(194, 194, 194);
 }
 .Game-header{
-  background-color: red;
+  background-color: rgb(138, 0, 0);
   display: flex;
   flex-flow: column;
+  align-items: center;
+}
+.Game-heading-link{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.Game-heading-link:hover{
+  color: rgb(93, 93, 93);
+  text-decoration: underline;
+}
+.Game-heading-link:visited{
+  color: black;
 }
 
 
 /* Cards and card children*/
-.Card-container{
-  border: rgb(43, 179, 16) 2px solid;
+.Card-container, .Game-content{
   flex-flow: row wrap;
   align-self: stretch;
   justify-content: space-evenly;
@@ -80,15 +90,47 @@
   height: 100%;
 }
 
-.Project-cards{
+
+.Project-cards, .Game-cards{
   border: solid 1px yellow;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
   width: 400px;
   height: 300px;
   overflow: auto;
   margin-top: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+}
+
+.Game-cards{
+  border: red 3px solid;
+}
+
+.Game-card-description{
+  display: flex;
+}
+
+.Game-card-links{
+  border: 2px solid blue;
+  box-sizing: border-box;
+  min-width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+}
+
+.Card-links{
+  text-decoration: none;
+  color: blue;
+}
+.Card-links:hover{
+  color: rgb(70, 126, 255);
+  text-decoration: underline;
+}
+.Card-links:visited{
+  color: blue;
 }
 
 /*General */

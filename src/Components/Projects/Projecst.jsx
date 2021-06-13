@@ -22,7 +22,7 @@ export default function Projecst(props) {
                     <div className="Project-cards">
                         <h3>Unity projects</h3>
                         <p>Projects that showcase my knowledge of unity while also allowing me to show mu skills with C#</p>
-                        <Link to={'/gamepage'} className="Content-links">Unity</Link>
+                        <Link to={'/gamepage'} className="Card-links">Unity</Link>
                     </div>
                 </div>
             </div>
