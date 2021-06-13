@@ -9,7 +9,9 @@ export default function Resume(props) {
         <div className="All-content">
             <Header />
             <div className="Main-content">
-                <p>Resume</p>
+                <h1>Resume</h1>
+                <p>putting up both an on scrren resume</p>
+                <p>And one to download</p>
             </div>
             <Footer />
         </div>

@@ -5,9 +5,12 @@ import GameHeader from '../GameStuff/GameHeader'
 
 export default function GamePage(props) {
     return (
-        <div>
+
+        <div className="All-content">
             <GameHeader />
-            <p>Game Page</p>
+            <div className="Game-content">
+                <p>Game cards go here</p>
+            </div>
         </div>
     );
 }

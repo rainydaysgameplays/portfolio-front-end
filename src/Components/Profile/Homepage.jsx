@@ -12,7 +12,8 @@ export default function Homepage() {
         <div className="All-content">
             <Header />
             <div className="Main-content">
-                <p>Homepage</p>
+                <h1>Homepage</h1>
+                <p>State what this project is</p>
             </div>
             <Footer />
         </div>
