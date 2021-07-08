@@ -10,6 +10,11 @@ import Contact from './Components/Profile/Contact.jsx'
 import Projects from './Components/Projects/Projecst.jsx'
 import GamePage from './Components/GameStuff/GamePage.jsx'
 
+import WebApps from './Components/Projects/WebApps';
+
+import GameTest from './Components/GameStuff/GameTest/GameTest.jsx'
+import GameTestInfo from './Components/GameStuff/GameTest/GameTestInfo';
+
 export default function App() {
   return (
     <div className="App">
@@ -19,6 +24,14 @@ export default function App() {
       <Route path="/contact" exact render={() => <Contact />} />
       <Route path="/projects" exact render={() => <Projects />} />
       <Route path="/gamepage" exact render={() => <GamePage />} />
+
+
+      <Route path="/webapps" exact render={() => <WebApps />} />
+      
+      <Route path="/gametest" exact render={() => <GameTest />} />
+      <Route path="/gametestinfo" exact render={() => <GameTestInfo />} />
+
+
     </div>
   );
 }

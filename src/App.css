@@ -1,11 +1,3 @@
-/* setting heading and footer boundries */
-.All-content{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
-  min-height: 100%;
-}
-
 /* Main heading */
 #Heading{
   background-color: black;
@@ -23,6 +15,7 @@
   justify-content: space-around;
 }
 
+/* Main heading links */
 .HeadingLinks:link, .HeadingLinks:visited, .HeadingLinks:hover{
   text-decoration: none;
   color: white;
@@ -34,7 +27,6 @@
   color: pink;
 }
 
-
 /* Footer */
 #Footer{
   display: flex;
@@ -44,14 +36,44 @@
   color: white;
 }
 
-/* Main content of pages*/
-.Main-content, .Card-container, .Game-content{
+/* ---------- Main settings ---------- */
+
+/* settings general layout */
+.All-content{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  min-height: 100%;
+}
+
+/* Main content of pages default settings*/
+.Main-content, .Card-container, .Game-content, .App-content{
   background-color: pink;
   overflow: auto;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+/* overiding main settings*/
+.Card-container, .Game-content{
+  flex-flow: row wrap;
+  align-self: stretch;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.Project-cards, .Game-cards{
+  border: solid 1px yellow;
+  width: 400px;
+  height: 300px;
+  overflow: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
 }
 
 /* game page contents*/
@@ -64,6 +86,26 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+.Game-cards{
+  border: red 3px solid;
+}
+.Game-card-description{
+  display: flex;
+}
+
+/* ------ everything links -------- */
+
+/* Game page links */
+.Game-card-links{
+  border: 2px solid blue;
+  box-sizing: border-box;
+  min-width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
 }
 .Game-heading-link{
   text-decoration: none;
@@ -78,48 +120,22 @@
 .Game-heading-link:visited{
   color: black;
 }
-
-
-/* Cards and card children*/
-.Card-container, .Game-content{
-  flex-flow: row wrap;
-  align-self: stretch;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  overflow: auto;
-  height: 100%;
+.gameCardLinks{
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: green;
+}
+.gameCardLinks:hover{
+  text-decoration: underline;
+  color: rgb(1, 158, 1);
+}
+.gameCardLinks:visited{
+  color: blue;
 }
 
-
-.Project-cards, .Game-cards{
-  border: solid 1px yellow;
-  width: 400px;
-  height: 300px;
-  overflow: auto;
-  margin-top: 20px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  justify-items: center;
-}
-
-.Game-cards{
-  border: red 3px solid;
-}
-
-.Game-card-description{
-  display: flex;
-}
-
-.Game-card-links{
-  border: 2px solid blue;
-  box-sizing: border-box;
-  min-width: 100%;
-  overflow: auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  
-}
+/* Project links */
 
 .Card-links{
   text-decoration: none;
