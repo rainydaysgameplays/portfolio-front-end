@@ -15,7 +15,7 @@ export default function WebApps(props) {
                 <div className="Card-container">
 
                     <div className="App-cards">
-                        <h3>Title 2</h3>
+                        <h3>Title 1</h3>
 
                         <div className="App-card-description">
                             <p>Image holder</p>

@@ -13,7 +13,7 @@ export default function Homepage() {
             <Header />
             <div className="Main-content">
                 <h1>Homepage</h1>
-                <p>State what this project is</p>
+                <p>State what the project is</p>
             </div>
             <Footer />
         </div>
