@@ -15,20 +15,25 @@ export default function WebApps(props) {
                 <div className="Card-container">
 
                     <div className="App-cards">
-                        <h3>Title 1</h3>
+                        <h3>General Assembly projects</h3>
 
                         <div className="App-card-description">
                             <p>Image holder</p>
-                            <p>Short description of project</p>
+                            <p>
+                                The projects listed on this page go into more detail about 
+                                the code and reasons behind the projects that I made while attending general assembly.
+                            </p>
                         </div>
                         <div className="App-card-links">
-                            <p>Link to aditional info</p>
                             <p>Link to project</p>
                         </div>
                     </div>
 
-                    {/* repeat as needed */}
-                    <div className="App-cards">
+
+
+{/* --------------------------------------------------------------- */}
+                        {/* repeat as needed Template */}
+                    {/* <div className="App-cards">
                         <h3>Title 2</h3>
                         
                         <div className="App-card-description">
@@ -39,7 +44,7 @@ export default function WebApps(props) {
                             <p>Link to aditional info</p>
                             <p>Link to project</p>
                         </div>
-                    </div>
+                    </div> */}
 
 
                 </div>

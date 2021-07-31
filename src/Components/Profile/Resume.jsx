@@ -10,8 +10,16 @@ export default function Resume(props) {
             <Header />
             <div className="Main-content">
                 <h1>Resume</h1>
-                <p>putting up both an on scrren resume</p>
-                <p>And one to download</p>
+                <p>
+                    The following links will open in another tab. Alternitively you can download them if that is your prefered method.
+                </p>
+          
+                <div>
+                    <div>
+                        <p>View PDF resume</p>
+                        <p>Download pdf resume</p>
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>
