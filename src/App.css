@@ -114,6 +114,28 @@
   display: flex;
 }
 
+/* GA projects home page */
+.GA-Page{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.GA-Page-Content{
+  color: white;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.GA-intro{
+  margin-top: 0px;
+  padding-top: 50px;
+}
+
 /* ------ everything links -------- */
 
 /* Game page links */
