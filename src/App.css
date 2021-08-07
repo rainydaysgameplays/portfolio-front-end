@@ -27,6 +27,24 @@
   color: pink;
 }
 
+/* GA heading settings */
+.GaHeadingContainer{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.GaTitle{
+  align-self: center;
+}
+
+.GaHeadingLinks{
+  background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
 /* Footer */
 #Footer{
   display: flex;

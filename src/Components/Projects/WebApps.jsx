@@ -25,7 +25,7 @@ export default function WebApps(props) {
                             </p>
                         </div>
                         <div className="App-card-links">
-                            <p>Link to project</p>
+                            <Link to={'gahome'} >Link to project</Link> 
                         </div>
                     </div>
 
