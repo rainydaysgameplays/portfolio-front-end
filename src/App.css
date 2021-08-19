@@ -114,7 +114,7 @@
   display: flex;
 }
 
-/* GA projects home page */
+/* -------------GA projects home page -----------*/
 .GA-Page{
   display: grid;
   grid-template-rows: auto 1fr;
@@ -135,6 +135,28 @@
   margin-top: 0px;
   padding-top: 50px;
 }
+
+/* --------------- GA Page images------------ */
+.Simon-Page-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  
+}
+.Simon-Page-img{
+  max-width: 100%;
+  height: auto;
+}
+.img-conatainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+
+
 
 /* ------ everything links -------- */
 
@@ -206,4 +228,9 @@
 /*General */
 p{
   margin: 7px;
+}
+
+h4{
+  display: flex;
+  justify-content: center;
 }
