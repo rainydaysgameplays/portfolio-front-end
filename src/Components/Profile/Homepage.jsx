@@ -15,7 +15,7 @@ export default function Homepage() {
                 <h1>Homepage</h1>
                 <p>Welcome to my portfolio site, this is where I host all of my personal projects for all to see. 
                     <br />
-                    Feel free to send me feedback either by e-mail or by the comments sections under each project.
+                    Feel free to send me feedback either by e-mail or on LinkedIn.
                 </p>
             </div>
             <Footer />

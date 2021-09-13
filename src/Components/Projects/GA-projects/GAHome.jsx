@@ -43,7 +43,7 @@ export default function GAHome(props) {
                 <p>
                     General Assembly tought me many things, more than just programming basics or how to propperly code. 
                     <br />
-                    They tought me how to learn code and how to further develop programming skills.
+                    They tought me how to teach myself code and how to further develop my programming skills.
                     <br />
                     They tought me how to work in a fast paced setting and to not be afraid to ask for help before you make mistakes.
                     <br />

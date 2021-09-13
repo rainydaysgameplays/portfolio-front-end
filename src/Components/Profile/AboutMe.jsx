@@ -13,7 +13,7 @@ export default function AboutMe(props) {
                 <h1>About me</h1>
                 <p>Image of me</p>
 
-                <p>MERN stack, REACT, Python, Django</p>
+                <p>Mongo, Express, React, Node, Python, Django</p>
                 <br></br>
                 <p>I am a full stack web-developer that has utilized many programming <br></br>
                 languages, from Node to Python, while working with others to find <br></br>
