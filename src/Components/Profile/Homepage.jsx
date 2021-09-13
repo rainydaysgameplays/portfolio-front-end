@@ -12,7 +12,11 @@ export default function Homepage() {
         <div className="All-content">
             <Header />
             <div className="Main-content">
-                <p>Homepage</p>
+                <h1>Homepage</h1>
+                <p>Welcome to my portfolio site, this is where I host all of my personal projects for all to see. 
+                    <br />
+                    Feel free to send me feedback either by e-mail or on LinkedIn.
+                </p>
             </div>
             <Footer />
         </div>

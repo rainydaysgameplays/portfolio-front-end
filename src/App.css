@@ -1,4 +1,4 @@
-/* header */
+/* Main heading */
 #Heading{
   background-color: black;
   color: white;
@@ -15,27 +15,9 @@
   justify-content: space-around;
 }
 
-/* Footer */
-#Footer{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-}
-
-.All-content{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
-  min-height: 100%;
-}
-
-/* Links */
+/* Main heading links */
 .HeadingLinks:link, .HeadingLinks:visited, .HeadingLinks:hover{
   text-decoration: none;
-}
-.HeadingLinks:link{
   color: white;
 }
 .HeadingLinks:visited{
@@ -45,31 +27,210 @@
   color: pink;
 }
 
-
-/* Main content */
-.Main-content, .Card-container{
-  background-color: pink;
-  overflow: scroll;
+/* GA heading settings */
+.GaHeadingContainer{
   display: flex;
   flex-flow: column wrap;
+}
+
+.GaTitle{
+  align-self: center;
+}
+
+.GaHeadingLinks{
+  background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+/* Footer */
+#Footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+
+/* ---------- Main settings ---------- */
+
+/* settings general layout */
+.All-content{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  min-height: 100%;
+}
+
+/* Main content of pages default settings*/
+.Main-content, .App-content{
+  background-color: pink;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-.Card-container{
-  border: black 2px solid;
-  flex-direction: row;
+/* Card containers */
+.Card-container, .Game-content{
+  display: flex;
+  flex-flow: row wrap;
   align-self: stretch;
   justify-content: space-evenly;
-  overflow: visible;
+  align-items: flex-start;
+  height: 100%;
 }
 
-.Project-cards{
+/* card settings */
+.Project-cards, .Game-cards, .App-cards{
   border: solid 1px yellow;
+  width: 400px;
+  height: 300px;
+  overflow: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+}
+
+/* game page contents*/
+.Game-content{
+  background-color: rgb(0, 0, 0);
+  color: rgb(194, 194, 194);
+}
+.Game-header{
+  background-color: rgb(138, 0, 0);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.Game-cards{
+  border: red 3px solid;
+}
+.Game-card-description{
+  display: flex;
+}
+
+/* -------------GA projects home page -----------*/
+.GA-Page{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.GA-Page-Content{
+  color: white;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.GA-intro{
+  margin-top: 0px;
+  padding-top: 50px;
+}
+
+/* --------------- GA Page images------------ */
+.Simon-Page-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
   
+}
+.Simon-Page-img{
+  max-width: 100%;
+  height: auto;
+}
+.img-conatainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+
+
+
+/* ------ everything links -------- */
+
+/* Game page links */
+.Game-card-links{
+  border: 2px solid blue;
+  box-sizing: border-box;
+  min-width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+}
+.Game-heading-link{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.Game-heading-link:hover{
+  color: rgb(93, 93, 93);
+  text-decoration: underline;
+}
+.Game-heading-link:visited{
+  color: black;
+}
+.gameCardLinks{
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: green;
+}
+.gameCardLinks:hover{
+  text-decoration: underline;
+  color: rgb(1, 158, 1);
+}
+.gameCardLinks:visited{
+  color: blue;
+}
+
+/* Web app page links */
+.App-card-links{
+  border: 2px solid yellow;
+  box-sizing: border-box;
+  min-width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* Project links */
+
+.Card-links{
+  text-decoration: none;
+  color: blue;
+}
+.Card-links:hover{
+  color: rgb(70, 126, 255);
+  text-decoration: underline;
+}
+.Card-links:visited{
+  color: blue;
 }
 
 /*General */
 p{
   margin: 7px;
+}
+
+h4{
+  display: flex;
+  justify-content: center;
 }

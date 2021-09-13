@@ -11,19 +11,22 @@ export default function Projecst(props) {
         <div  className="All-content">
             <Header />
             <div className="Main-content">
-                <p>Projects</p>
+                <h1>Projects</h1>
 
                 <div className="Card-container">
                     <div className="Project-cards">
-                        <p>Front end</p>
+                        <h3>Web aplications</h3>
+                        <p>These webb aplications are made using node.js along with React. Some of these projects are full stack while others might only pull from an API</p>
+                        <Link to={'/webapps'} className="Card-links">Select</Link>
                     </div>
-                    <div className="Project-cards">
-                        <p>Full stack</p>
-                    </div>
-                    <div className="Project-cards">
-                        <p>Unity projects</p>
-                        <Link to={'/gamepage'} className="Content-links">Unity</Link>
-                    </div>
+
+                    
+                    {/* <div className="Project-cards">
+                        <h3>Unity projects</h3>
+                        <p>Projects that showcase my knowledge of unity while also allowing me to show mu skills with C#</p>
+                        <Link to={'/gamepage'} className="Card-links">Unity</Link>
+                    </div> */}
+                    
                 </div>
             </div>
             <Footer />
