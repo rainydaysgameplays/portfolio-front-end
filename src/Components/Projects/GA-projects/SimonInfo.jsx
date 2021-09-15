@@ -2,6 +2,7 @@ import React from 'react';
 
 // imports
 import GAHeader from './GAHeader.jsx';
+import Carousel from '../../Carousel.jsx';
 
 // image imports
 import SimonPage from "./GA-projects-pictures/Simon-pictures/Simon-game-page.png"
@@ -9,6 +10,7 @@ import SimonCode1 from "./GA-projects-pictures/Simon-pictures/Simon-code1.png"
 import SimonCode2 from "./GA-projects-pictures/Simon-pictures/Simon-code2.png"
 import SimonCode3 from "./GA-projects-pictures/Simon-pictures/Simon-code3.png"
 
+let images = [SimonPage, SimonCode1, SimonCode2, SimonCode3]
 
 export default function SimonInfo(props) {
     return (
@@ -19,11 +21,8 @@ export default function SimonInfo(props) {
 
             <div className="Simon-Page-section" >
                 <div className="img-conatainer">
-                    <img className="Simon-Page-img" src={SimonPage} alt="Page img" />
-                    <img className="Simon-Page-img" src={SimonCode1} alt="Page img" />
-                    <img className="Simon-Page-img" src={SimonCode2} alt="Page img" />
-                    <img className="Simon-Page-img" src={SimonCode3} alt="Page img" />
-                
+                   <Carousel pictures={images} />
+                   
                 </div>
                 <p>
                     This Simon game was made with only basic html, css, and js files. 
