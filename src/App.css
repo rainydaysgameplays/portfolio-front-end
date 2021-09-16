@@ -155,7 +155,16 @@
   row-gap: 10px;
 }
 
+/* Carousel settings */
 
+#Carousel-container{
+  display: grid;
+  grid-template-columns: .1fr 1fr .1fr;
+}
+
+#Carousel-left, #Carousel-right{
+  background-color: gray;
+}
 
 
 /* ------ everything links -------- */
