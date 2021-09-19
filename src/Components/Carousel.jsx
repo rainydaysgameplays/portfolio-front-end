@@ -25,14 +25,16 @@ export default function Carousel({ pictures }) {
 
     return (
         <div id="Carousel-container">
-            <div id="Carousel-left">
-                {/* onclick function to set state -1 and to loop through */}
+            <div id="Carousel-left" onClick={leftClick}>
+                
                 <p>{"<<"}</p>
             </div>
 
-            <img className="Simon-Page-img" src={pictures[picState]} alt="project pictures" />
+            <div>
+                <img id="Carousel-picture" src={pictures[picState]} alt="project pictures" />
+            </div>
             
-            <div id="Carousel-right">
+            <div id="Carousel-right" onClick={rightClick}>
                 <p>{">>"}</p>
             </div>
 

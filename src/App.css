@@ -129,7 +129,7 @@
   height: 100%;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
+  /* align-content: center; */
 }
 .GA-intro{
   margin-top: 0px;
@@ -139,20 +139,9 @@
 /* --------------- GA Page images------------ */
 .Simon-Page-section{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   
-}
-.Simon-Page-img{
-  max-width: 100%;
-  height: auto;
-}
-.img-conatainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
 }
 
 /* Carousel settings */
@@ -160,10 +149,23 @@
 #Carousel-container{
   display: grid;
   grid-template-columns: .1fr 1fr .1fr;
+  padding: 10px;
+  max-width: fit-content;
+  
 }
 
 #Carousel-left, #Carousel-right{
   background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 300px;
+}
+
+#Carousel-picture{
+  object-fit: contain;
+  width: 600px;
+  height: 300px;
 }
 
 
