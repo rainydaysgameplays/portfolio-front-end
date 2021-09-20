@@ -27,7 +27,7 @@ export default function Carousel({ pictures }) {
         <div id="Carousel-container">
             <div id="Carousel-left" onClick={leftClick}>
                 
-                <p>{"<<"}</p>
+                <p classNmae="Carousel-Arrows" >{"<<"}</p>
             </div>
 
             <div>
@@ -35,7 +35,7 @@ export default function Carousel({ pictures }) {
             </div>
             
             <div id="Carousel-right" onClick={rightClick}>
-                <p>{">>"}</p>
+                <p classNmae="Carousel-Arrows" >{">>"}</p>
             </div>
 
         </div>

@@ -16,9 +16,7 @@ export default function SimonInfo(props) {
     return (
         <div className="GA-Page">
         <GAHeader Title={"Simon Game"}/>
-        <div className="GA-Page-Content">
-           
-            <div className="Simon-Page-section" >
+            <div className="Simon-Page-Content" >
                 
                 <Carousel pictures={images} />
                 
@@ -35,9 +33,6 @@ export default function SimonInfo(props) {
                     </p>
                 </div>
             </div>
-
-
-        </div>
     </div>
     );
 }
